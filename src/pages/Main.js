@@ -1,81 +1,106 @@
-import { makeStyles } from '@material-ui/core'
-import { Container,Box, Typography,Grid,Paper,TextField,Button} from '@mui/material'
+import { makeStyles ,InputBase } from '@material-ui/core'
+import { Container,Box, Typography,Grid,TextField,Button,Stack} from '@mui/material'
 import React from 'react'
 import TerminalTwoToneIcon from '@mui/icons-material/TerminalTwoTone';
 import Projects_card from '../comp/Projects_card'
-import Photos from '../comp/Photo'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import SendIcon from '@mui/icons-material/Send';
 import '../App.css'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+const theme = createTheme({
+  typography: { 
+    fontFamily: 
+      'Dancing Script',
+      },
+        palette: {
+          primary: {
+            main: '#a9a9a9',
+          },
+        },
+});
 
+const color = "red";
 const useStyles=makeStyles({
+  
 arrowicon:{
     display:'flex',
     justifyContent:'center',
 },
 input:{
     display:'flex' ,
-    justifyContent:'center'
+    justifyContent:'center',
 },
-
+Typography:{
+  color:'#a9a9a9'
+},
+TextField:{
+  borderWidth: "1px",
+    borderColor: "yellow !important"
+}
 })
 export default function Main(props) {
     const classes = useStyles()
+    const [value, setValue] = React.useState('');
+
+    const handleChange = (event) => {
+      setValue(event.target.value);
+    };
   return (
     <Container maxWidth={100}>
+       <ThemeProvider theme={theme}>
         <Box display='flex' marginTop={2}>
-            <Typography color='error' marginRight={1}>
+            <Typography  marginRight={1} className={classes.Typography} variant='h5'>
                 HAMZA OSAILAN
             </Typography>
-            <TerminalTwoToneIcon color='error' />
+            <TerminalTwoToneIcon  className={classes.Typography}/>
         </Box>
-        <Box marginTop={30}>
-            <Typography color='error' align='center'>
+        <Box marginTop={35}>
+            <Typography className={classes.Typography}  align='center' variant='h1'>
                 Welcom
             </Typography>
         </Box>
         <Box  className={classes.arrowicon} marginTop={2}>
-        <KeyboardArrowDownIcon color='error'  />
+        <KeyboardArrowDownIcon className={classes.Typography} />
         </Box>
         <Box marginTop={60}>
-        <Typography color='error' >
+        <Typography className={classes.Typography} variant='h4'>
                 About me 
             </Typography>
         </Box>
-        <Box>
-            <Paper>
-            <Typography color='error' align='center' marginTop={3}>
+        <Box marginTop={10}>
+            <Typography className={classes.Typography}  align='center' marginTop={3} variant='h5'>
                 i'm front end dev...
             </Typography>
-            </Paper>
+          
         </Box>
-        <Box marginTop={10}>
-           <Typography color='error'>
+        <Box marginTop={70}>
+           <Typography className={classes.Typography} variant='h4'>
             Projects:
            </Typography> 
         </Box>
 
-        <Grid spacing={1} container>
+        <Grid spacing={1} container marginTop={10}>
+        
         <Grid item xs={4}>
-        <Projects_card/>
+        <Projects_card name='TreeCourse' image='' alt='TreeCourseImage' height="140" component="img" btn='share' dsc='In this project, we analyze designed and analysis application for giving solution of problem and can we solve this solution the problem is how students can find courses on one web/mobile application instead of multiple web/mobile application.'/>
         </Grid>
         <Grid item xs={4}>
-        <Projects_card/>
+        <Projects_card name='PlantsWorld' image='tr.png' alt='PlantsWorld'  height="140" component="img" btn='share' dsc='plantsworld is web page talking about the types of plants '/>
         </Grid>
         <Grid item xs={4}>
-        <Projects_card/>
+        <Projects_card name='' image='tr.png' alt='PlantsWorld'  height="140" component="img" btn='share' dsc=''/>
         </Grid>
         
     </Grid>
     <Box marginTop={30}>
-        <Typography color='red'>
-        programming language
+        <Typography className={classes.Typography} variant='h4'>
+        programming languages
         </Typography>
     </Box>
    
  
-    <Grid container spacing={1} align='center'>
+    <Grid container spacing={1} align='center' marginTop={10}>
       <Grid item xs={6} md={4} lg={2}>
         <img src='https://www.pinclipart.com/picdir/big/102-1024697_related-wallpapers-node-js-logo-png-clipart.png' width={70}/>
       </Grid>
@@ -112,36 +137,32 @@ export default function Main(props) {
       <Grid item xs={6} md={4} lg={2}>
       <img src='https://jafs.es/wp-content/uploads/2020/06/react.png' width={70}/>
       </Grid>
-
-
-
-
-
     </Grid>
  
-    <Box>
-        <Typography color='error'>
+    <Box marginTop={37}>
+        <Typography  className={classes.Typography} variant='h4'>
             Contact me
         </Typography>
     </Box>
-    <form>
-  <Box className={classes.input}>
-  <TextField id="outlined-basic" label="Name" variant="outlined" />
-  </Box>
-  <Box className={classes.input} marginTop={2}>
-  <TextField id="outlined-basic" label="Name" variant="outlined" />
-  </Box>
-  <Box className={classes.input} marginTop={2}>
-  <TextField id="outlined-basic" label="Massage" variant="outlined" />
-  </Box>
-  <Box className={classes.input} marginTop={2}>
-  <Button variant="contained" endIcon={<SendIcon />}>
+    <Stack  
+      mt={10}
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      spacing={2}
+      component="form"
+      noValidate
+     autoComplete="off" 
+     >
+      <TextField id="outlined-basic" label="Name" variant="outlined" fullWidth />
+      <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth />
+      <TextField fullWidth id="standard-multiline-flexible" label="Massage" multiline maxRows={6} value={value} onChange={handleChange} variant="outlined"/>
+      <Button variant="contained" endIcon={<SendIcon />}>
         Send
       </Button>
-      </Box>
-  </form>
+    </Stack>
 
-  <Box align='center' marginTop={4}>
+  <Box align='center' marginTop={4} marginBottom={2}>
     <Button size='small' href='www.linkedin.com/in/hamza-osailan'>
         <img width={20}  src='https://logospng.org/download/linkedin/logo-linkedin-icon-512.png'/>
     </Button>
@@ -150,6 +171,7 @@ export default function Main(props) {
     <img width={20} src='https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol-700x394.png' />
     </Button>
   </Box>
+  </ThemeProvider>
     </Container>
   )
 }
