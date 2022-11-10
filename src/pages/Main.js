@@ -238,7 +238,6 @@ export default function Main(props) {
           component="form"
           noValidate
           autoComplete="off"
-          component={motion.div}
           initial={{ y: -100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           Transition={{
