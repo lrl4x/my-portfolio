@@ -54,11 +54,11 @@ export default function Main(props) {
   return (
     <Container >
       <ThemeProvider theme={theme}>
-        <Box display='flex' marginTop={2}
+        <Box marginTop={1}
         >
           <img src={logo}/>
         </Box>
-        <Box marginTop={35}>
+        <Box marginTop={20}>
           <Typography className={classes.Typography} align='center' variant='h1'
             component={motion.div}
             initial={{ y: -100, opacity: 0 }}
