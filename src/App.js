@@ -13,7 +13,7 @@ export default function App() {
 
 
   return (
-    <Container >
+    <Container fixed >
       <Main/>
      </Container>
   )
