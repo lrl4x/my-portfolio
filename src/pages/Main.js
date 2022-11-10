@@ -10,6 +10,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { motion } from "framer-motion"
 import tr from '../tr.png'
 import plants from '../plants.png'
+import logo from '../logo.png'
 
 //themeE
 const theme = createTheme({
@@ -51,15 +52,11 @@ export default function Main(props) {
     setValue(event.target.value);
   };
   return (
-    <Container maxWidth={100}>
+    <Container >
       <ThemeProvider theme={theme}>
         <Box display='flex' marginTop={2}
         >
-          <Typography marginRight={1} className={classes.Typography} variant='h5'
-          >
-            HAMZA OSAILAN
-          </Typography>
-          <TerminalTwoToneIcon className={classes.Typography} />
+          <img src={logo}/>
         </Box>
         <Box marginTop={35}>
           <Typography className={classes.Typography} align='center' variant='h1'

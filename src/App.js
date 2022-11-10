@@ -13,8 +13,8 @@ export default function App() {
 
 
   return (
-    <Container fixed >
+    <>
       <Main/>
-     </Container >
+     </>
   )
 }
