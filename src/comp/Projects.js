@@ -1,31 +1,17 @@
 import React from 'react'
 import {Box,Typography,Grid} from '@mui/material'
-import logo from '../logo.png'
 import { makeStyles} from '@material-ui/core'
 import { motion } from "framer-motion"
 import Card1 from '../comp/Card1'
 import tr from '../tr.png'
 import plants from '../plants.png'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-
-
-const theme = createTheme({
-    typography: {
-      fontFamily:
-        'Dancing Script',
-    },
-    palette: {
-      primary: {
-        main: '#a9a9a9',
-      },
-    },
-  });
-  
   
   const useStyles = makeStyles({
     Page:{
       height:'100vh',
+      minheight:'100vh',
+     
     },
     Typography: {
       color: '#a9a9a9',

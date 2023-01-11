@@ -1,7 +1,6 @@
 import React from 'react'
 import {Box,Typography} from '@mui/material'
 import logo from '../logo.png'
-import backg from '../backg.jpeg'
 import { makeStyles} from '@material-ui/core'
 import { motion } from "framer-motion"
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -34,15 +33,8 @@ const useStyles = makeStyles({
 
   },
   Page:{
-    height:'100%',
-    backgroundImage:`url(${backg})`,
-    backgroundRepeat:'no-repeat',
-    backgroundColot:"black",
-    backgroundPosition:'center',
-    backgroundSize:"cover",
-    height:700,
-    width:"100%",
-    
+    height:'100vh',
+    minheight:'100vh',
   },
 })
 

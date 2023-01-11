@@ -1,10 +1,11 @@
 import { makeStyles} from '@material-ui/core'
-import { Container, Box, Typography, Grid, TextField, Button, Stack, CssBaseline  } from '@mui/material'
+import { Container, CssBaseline  } from '@mui/material'
 import React from 'react'
 import Home from '../comp/Home'
 import Aboutme from '../comp/Aboutme';
 import Projects from '../comp/Projects'
 import Programminglanguages from '../comp/Programminglanguages'
+import Contactme from '../comp/Contactme'
 import Footer from '../comp/Footer'
 import '../App.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -58,7 +59,9 @@ export default function Main(props) {
         <Aboutme/>
         <Projects/>
         <Programminglanguages/>
+        <Contactme/>
         <Footer/>
+        
       </ThemeProvider>
     </Container>
   )

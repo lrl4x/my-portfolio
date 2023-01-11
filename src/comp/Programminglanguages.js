@@ -34,6 +34,8 @@ const useStyles = makeStyles({
   },
   Page:{
     height:'100vh',
+    minheight:'100vh',
+  
   },
 })
 
