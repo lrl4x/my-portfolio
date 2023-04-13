@@ -52,7 +52,7 @@ export default function Main(props) {
     setValue(event.target.value);
   };
   return (
-    <Container component="main" maxWidth="xl">
+    <Container component="main" >
        <CssBaseline />
       <ThemeProvider theme={theme}>
         <Home/>

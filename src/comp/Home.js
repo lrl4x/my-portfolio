@@ -61,17 +61,7 @@ export default function Nav() {
           </Typography>
         </Box>
 
-        <Box className={classes.arrowicon} marginTop={2}
-          component={motion.div}
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          Transition={{
-            type: "spring", bounce: 0.4, duration: 3, StaggerChildren:0.5}}
-            >
-          <KeyboardArrowDownIcon className={classes.Typography}
-
-          />
-        </Box>
+        
         </ThemeProvider>
     </section>
   )

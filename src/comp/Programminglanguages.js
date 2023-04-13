@@ -45,7 +45,9 @@ export default function Programminglanguages() {
 
   return (
     <section className={classes.Page}>
-        <Box
+        <Box 
+        marginTop={10} 
+        height={100}
          component={motion.div}
          initial={{ y: -100, opacity: 0 }}
          whileInView={{ y: 0, opacity: 1 }}
@@ -84,7 +86,7 @@ export default function Programminglanguages() {
             <img src='https://andrejgajdos.com/wp-content/uploads/2019/11/npm-logo.png?x24361' width={70} alt=''/>
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <img src='https://desarrollador-android.com/wp-content/uploads/2015/03/android_studio_logo-1024x1024.png' width={70} alt=''/>
+            <img src='https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png' width={70} alt=''/>
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
             <img src='https://objectpartners.com/wp-content/uploads/2015/02/mongodb-logo.png' width={70} alt=''/>
@@ -96,7 +98,7 @@ export default function Programminglanguages() {
             <img src='https://download.logo.wine/logo/Bootstrap_(front-end_framework)/Bootstrap_(front-end_framework)-Logo.wine.png' width={150} alt=''/>
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <img src='https://pixlok.com/wp-content/uploads/2021/05/flutter-logo.jpg' width={70} alt=''/>
+            <img src='https://logospng.org/download/laravel/logo-laravel-icon-1024.png' width={70} alt=''/>
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
             <img src='https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png' width={70} alt=''/>
@@ -104,7 +106,10 @@ export default function Programminglanguages() {
           <Grid item xs={6} md={4} lg={2}>
             <img src='https://jafs.es/wp-content/uploads/2020/06/react.png' width={70} alt=''/>
           </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <img src='https://th.bing.com/th/id/R.b0d9db2590b5f2ee148edc924ea3bc4d?rik=2%2bz5KkB5GUKoEQ&pid=ImgRaw&r=0' width={70} alt=''/>
+          </Grid>
         </Grid>
     </section>
   )
-}
+}git

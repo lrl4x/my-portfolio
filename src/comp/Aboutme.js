@@ -41,7 +41,6 @@ export default function Aboutme() {
     </Box>
 
     <Box 
-     marginTop={10}
      component={motion.div}
      initial={{ y: -100, opacity: 0 }}
      whileInView={{ y: 0, opacity: 1 }}
@@ -50,7 +49,7 @@ export default function Aboutme() {
      }}
     >
        
-      <Typography  align='center' marginTop={3} variant='h5'>
+      <Typography  align='left' marginTop={3} variant='h5'>
       My name is Hamza Najeeb Osailan I'm a full-stack developer and software engineer who enjoys working with all types of personalities. Seeking a chance to architect new software applications. A determined and knowledgeable software developer who can think outside the box. Focused, results-driven, and knowledgeable in multiple computer languages
       </Typography>
 
