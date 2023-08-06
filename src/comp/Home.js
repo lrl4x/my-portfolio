@@ -57,7 +57,11 @@ export default function Nav() {
               type: "spring", bounce: 0.4, duration: 3, StaggerChildren:0.5
             }}
           >
+<<<<<<< HEAD
             WELCOME
+=======
+            Welcom
+>>>>>>> a0ab37fbc6006fb4a38feeba808f91e7dab7e3db
           </Typography>
         </Box>
 

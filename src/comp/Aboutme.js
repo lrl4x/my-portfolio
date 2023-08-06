@@ -31,6 +31,7 @@ export default function Aboutme() {
     <Box 
     marginTop={10}
     component={motion.div}
+<<<<<<< HEAD
     initial={{ y: -100, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     Transition={{
@@ -39,6 +40,14 @@ export default function Aboutme() {
     >
       <Typography className={classes.Typography} variant='h4'>
         ABOUT ME
+=======
+    initial={{y:-50 ,opacity:0}}
+    whileInView={{x:19 ,opacity:1}}
+    Transition={{type:"spring",bounce:0.4,duration:3,StaggerChildren:0.5}}
+    >
+      <Typography className={classes.Typography} variant='h4'>
+        About me
+>>>>>>> a0ab37fbc6006fb4a38feeba808f91e7dab7e3db
       </Typography>
     </Box>
 
