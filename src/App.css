@@ -1,0 +1,13 @@
+
+body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Quicksand:wght@300;400&display=swap');  
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  }
+
+.label1{
+  color:white;
+}
