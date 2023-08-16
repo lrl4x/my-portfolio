@@ -49,19 +49,15 @@ export default function Nav() {
 
       <img src={logo}/>
       <Box marginTop={20}>
-          <Typography className={classes.Typography} align='center' variant='h1'
-            component={motion.div}
-            initial={{ y: -100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            Transition={{
-              type: "spring", bounce: 0.4, duration: 3, StaggerChildren:0.5
-            }}
+          <Typography className={classes.Typography} align='center' variant='h2'
+             component={motion.div}
+             initial={{ y: -100, opacity: 0 }}
+             whileInView={{ y: 0, opacity: 1 }}
+             Transition={{
+               type: "spring", bounce: 0.4, duration: 3, StaggerChildren:0.5
+             }}
           >
-<<<<<<< HEAD
             WELCOME
-=======
-            Welcom
->>>>>>> a0ab37fbc6006fb4a38feeba808f91e7dab7e3db
           </Typography>
         </Box>
 

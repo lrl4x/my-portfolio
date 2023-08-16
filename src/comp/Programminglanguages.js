@@ -56,20 +56,12 @@ export default function Programminglanguages() {
          }}
         >
           <Typography className={classes.Typography} variant='h4'>
-<<<<<<< HEAD
        PROGRAMMING LANGUAGES
-=======
-            programming languages
->>>>>>> a0ab37fbc6006fb4a38feeba808f91e7dab7e3db
           </Typography>
         </Box>
 
 
-<<<<<<< HEAD
         <Grid container spacing={1} align='center' marginTop={3}
-=======
-        <Grid container spacing={1} align='center' marginTop={10}
->>>>>>> a0ab37fbc6006fb4a38feeba808f91e7dab7e3db
        component={motion.div}
        initial={{ y: -100, opacity: 0 }}
        whileInView={{ y: 0, opacity: 1 }}
@@ -120,8 +112,4 @@ export default function Programminglanguages() {
         </Grid>
     </section>
   )
-<<<<<<< HEAD
 }
-=======
-}git
->>>>>>> a0ab37fbc6006fb4a38feeba808f91e7dab7e3db
